@@ -1,0 +1,61 @@
+/* Quick Text Colors */
+
+.text-primary {
+  color: $primary-color;
+}
+.text-dark-primary {
+  color: $primary-darken-color;
+}
+
+.text-second {
+  color: $second-color;
+}
+
+
+/* Font Weights */
+
+.text-black {
+  font-weight: 900;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-thin {
+  font-weight: 200;
+}
+
+/* Text Sizes */
+
+.text-xxs {
+  font-size: 0.4rem;
+}
+
+.text-xs {
+  font-size: 0.7rem;
+}
+
+.text-s {
+  font-size: 1rem;
+}
+
+.text-m {
+  font-size: 1.4rem;
+}
+
+.text-l {
+  font-size: 1.8rem;
+}
+
+.text-xl {
+  font-size: 2.4rem;
+}
+
+.text-xxl {
+  font-size: 3.6rem;
+}

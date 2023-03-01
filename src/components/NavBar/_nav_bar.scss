@@ -1,0 +1,44 @@
+@import "../../styles/scss/patrials/variables";
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 0px 50px;
+  z-index: 1; // add a z-index to ensure the navbar appears above other elements
+}
+
+.nav-bar button {
+  margin: 4px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  counter-reset: item 0;
+}
+
+.nav-link {
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-bar a {
+  color: $primary-color;
+  counter-increment: item 0;
+  &:before {
+    content: "0" counter(item) ".";
+    counter-increment: item;
+    margin-right: 5px;
+    color: $second-color;
+    font-size: 12px;
+    text-align: right;
+  }
+}
