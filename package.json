@@ -1,5 +1,4 @@
 {
-  "homepage": "https://youssef-yasser-ali.github.io",
   "name": "youssef-ali",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "vit build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
