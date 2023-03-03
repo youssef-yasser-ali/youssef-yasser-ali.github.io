@@ -19,7 +19,7 @@ $breakpoints: (
   // For BS grid
   xs: 320px,
   // Smartphone
-  sm: 600px,
+  sm: 577px,
   // Tablets
   md: 900px,
   // Tablets Landscape and small desktops
@@ -34,8 +34,9 @@ $breakpoints: (
 }
 
 $container-sizes: (
-  sm: map-get($breakpoints, sm) - 100px,
-  md: map-get($breakpoints, md) - 160px,
+  xs: map-get($breakpoints, xs) + 100px,
+  sm: map-get($breakpoints, sm) - 130px,
+  md: map-get($breakpoints, md) - 200px,
   lg: map-get($breakpoints, lg) - 180px,
   xl: map-get($breakpoints, xl) - 420px,
 );
@@ -43,6 +44,8 @@ $container-sizes: (
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-right: 25px;
+  padding-left: 25px;
 
   &:not(.is-fluid) {
     margin: 0 auto;

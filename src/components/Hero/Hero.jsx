@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { data } from "../../config";
+import { data } from "../../data/PersoalData";
+
 import "./_hero.scss";
 
 function Hero() {

@@ -6,19 +6,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .email a {
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    color: $icon-color;
+    letter-spacing: 0.2em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    &:hover {
+      color: $second-color;
+    }
+  }
+  .line {
+    background-color: $icon-color;
+    width: 1.2px;
+    height: 6rem;
+  }
 }
-.email a {
-  margin: 20px auto;
-  padding: 10px;
-  font-size: 12px;
-  line-height: 18px;
-  color: $icon-color;
-  letter-spacing: 0.2em;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-}
-.emailContainer .line {
-  background-color: $icon-color;
-  width: 1.2px;
-  height: 6rem;
+
+@media (max-width: $screen-s) {
+  .emailContainer {
+    display: none;
+  }
 }
