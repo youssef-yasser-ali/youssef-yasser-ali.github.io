@@ -2,20 +2,42 @@ import React, { useState } from "react";
 import "./_nav_bar.scss";
 
 function NavBar() {
-  const [toggle, setToogle] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handelToggle = () => {
-    setToogle(!toggle);
+    setIsOpen(!isOpen);
   };
+  const toggleComponent = (
+    // make a toggle menue
+
+    <div className="toggle-item">
+      <span onClick={handelToggle} className="icons">
+        {!isOpen ? (
+          <>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </>
+        ) : (
+          <div id="close" className="close">
+            <div className="outer">
+              <div className="inner"></div>
+            </div>
+          </div>
+        )}
+      </span>
+    </div>
+  );
 
   return (
     <>
       <nav className="nav-bar">
         <div className="logo">logo</div>
-        <div className={`toggle-menu-con ${toggle ? "active" : ""}`}>
-          <span onClick={handelToggle}>toggle</span>
-        </div>
-        <ol className={`nav-links ${toggle ? "active" : ""}`}>
+        {!isOpen && toggleComponent}
+        <ol className={`nav-links ${isOpen ? "active" : ""}`}>
+          {toggleComponent}
+
           <li className="nav-link">
             <a href="#">About</a>
           </li>
@@ -31,7 +53,7 @@ function NavBar() {
           <button className=" btn btn-second">Resume</button>
         </ol>
       </nav>
-      {toggle ? <div className="overlay" onClick={handelToggle}></div> : null}
+      {isOpen ? <div className="overlay" onClick={handelToggle}></div> : null}
     </>
   );
 }
