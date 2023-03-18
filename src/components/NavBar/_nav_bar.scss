@@ -194,3 +194,7 @@
   bottom: 50%;
   transform: rotate(-45deg);
 }
+
+.nav-link {
+  transition: all 500ms ease-out;
+}
