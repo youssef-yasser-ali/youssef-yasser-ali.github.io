@@ -1,18 +1,46 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
-import Hero from "./components/Hero/Hero";
 import Header from "./components/Sections/Header";
-import Social from "./components/Social/Social";
-import Email from "./components/Email/Email";
+
+import Contact from "./components/Contact/Contact";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Set a timeout to simulate loading time
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
   return (
     <>
-      <NavBar />
-      <Social />
-      <Email />
-      <Header />
+      {isLoading ? (
+        // Render the loading view while isLoading is true
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100vh",
+            backgroundColor: "#282c34",
+          }}
+        >
+          <p>Loading...</p>
+        </div>
+      ) : (
+        // Render the actual content when isLoading is false
+        <>
+          <NavBar />
+          <Contact />
+          <Header />
+        </>
+      )}
     </>
   );
 }

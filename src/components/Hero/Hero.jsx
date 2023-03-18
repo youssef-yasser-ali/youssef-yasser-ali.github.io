@@ -30,7 +30,8 @@ function Hero() {
                 <CSSTransition
                   key={i}
                   classNames="fadeup"
-                  timeout={loaderDelay}
+                  timeout={navDelay}
+                  appear={true}
                 >
                   <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
                 </CSSTransition>
@@ -38,9 +39,16 @@ function Hero() {
           </TransitionGroup>
         </div>
 
-        <div className="img">
-          <img src={data.imgSrc} alt="" />
-        </div>
+        <CSSTransition
+          in={isloaded}
+          timeout={loaderDelay + 300}
+          classNames="fade"
+          unmountOnExit
+        >
+          <div className="img">
+            <img src={data.imgSrc} alt="" />
+          </div>
+        </CSSTransition>
       </div>
     </section>
   );

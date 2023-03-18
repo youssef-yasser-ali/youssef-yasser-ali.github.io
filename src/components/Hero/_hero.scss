@@ -49,6 +49,12 @@
   transition: all 500ms ease-out;
 }
 
+.fadeupImg-enter-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 500ms ease-out;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -71,4 +77,14 @@
       display: none;
     }
   }
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+  transition-delay: 800ms;
 }
