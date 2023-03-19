@@ -41,12 +41,12 @@ function Hero() {
 
         <CSSTransition
           in={isloaded}
-          timeout={loaderDelay + 300}
+          timeout={loaderDelay + 1000}
           classNames="fade"
           unmountOnExit
         >
           <div className="img">
-            <img src={data.imgSrc} alt="" />
+            <img src="../../src/assets/youssef.JPG" alt="" />
           </div>
         </CSSTransition>
       </div>

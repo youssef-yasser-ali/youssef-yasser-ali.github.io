@@ -70,9 +70,9 @@ function NavBar() {
                 </CSSTransition>
               ))}
           </TransitionGroup>
-          {/* end */}
+          {/* resume button */}
 
-          <div className={` ${ismounted ? "fadeDown-active" : "fadeDown "} `}>
+          <div className={`fade ${ismounted && "fadeDown-active"} `}>
             <button className="btn btn-second">Resume</button>
           </div>
         </ol>

@@ -4,5 +4,4 @@ export const data = {
   description: ` I’m a software engineer especially a web developer with a strong
   passion for the fields of artificial intelligence and machine
   learning.`,
-  imgSrc: `../../src/assets/youssef.JPG`,
 };

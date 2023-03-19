@@ -15,6 +15,17 @@
   button {
     margin: 4px;
   }
+  .fade {
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    transition-delay: 500ms;
+    transform: translateY(-100px);
+  }
+
+  .fadeDown-active {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .toggle-item {
   display: none;
@@ -217,16 +228,4 @@
   opacity: 1;
   transform: translateY(0px);
   transition: all 500ms ease-in-out;
-}
-
-.fadeDown {
-  opacity: 0;
-  transform: translateY(-100px);
-}
-
-.fadeDown-active {
-  transition: all 500ms ease-in-out;
-  transition-delay: 500ms;
-  opacity: 1;
-  transform: translateY(0px);
 }

@@ -1,3 +1,3 @@
-import youssefImg from "./youssef.JPEG";
+import youssefImg from "./youssef.JPG";
 
 export { youssefImg };
