@@ -46,7 +46,7 @@ function Hero() {
           unmountOnExit
         >
           <div className="img">
-            <img src="../../src/assets/youssef.JPG" alt="" />
+            <img src="https://i.ibb.co/6tMZGBJ/youssef.jpg" alt="" />
           </div>
         </CSSTransition>
       </div>

@@ -15,7 +15,9 @@ function NavBar() {
   ];
 
   useEffect(() => {
-    setIsmounted(true);
+    setTimeout(() => {
+      setIsmounted(true);
+    }, 100);
   }, []);
 
   const handelToggle = () => {
@@ -71,7 +73,6 @@ function NavBar() {
               ))}
           </TransitionGroup>
           {/* resume button */}
-
           <div className={`fade ${ismounted && "fadeDown-active"} `}>
             <button className="btn btn-second">Resume</button>
           </div>
