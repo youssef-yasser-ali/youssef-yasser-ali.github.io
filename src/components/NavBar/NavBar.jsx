@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { youssefLogo } from "../../assets";
 import { navDelay } from "../../data/timeDelay";
 import "./_nav_bar.scss";
 
@@ -49,7 +50,9 @@ function NavBar() {
   return (
     <>
       <nav className="nav-bar">
-        <div className="logo">logo</div>
+        <div className={`logo ${ismounted && "fade-enter-active"} `}>
+          <img src={youssefLogo} alt="" />
+        </div>
 
         {!isOpen && toggleComponent}
         <ol className={`nav-links ${isOpen ? "active" : ""}`}>

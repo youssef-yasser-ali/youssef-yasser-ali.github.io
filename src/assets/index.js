@@ -1,3 +1,4 @@
-import youssefImg from "./youssef.JPG";
+// import youssefImg from "./youssef.JPG";
+import youssefLogo from "./youssef logo.svg";
 
-export { youssefImg };
+export { youssefLogo };
