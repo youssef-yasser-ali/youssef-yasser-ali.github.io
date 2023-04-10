@@ -20,23 +20,25 @@ function Hero() {
     <p>{data.description}</p>,
   ];
 
+  let heroItems = null;
+  if (isloaded) {
+    heroItems = items.map((item, i) => (
+      <CSSTransition
+        key={i}
+        classNames="fadeup"
+        timeout={navDelay}
+        appear={true}
+      >
+        <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
+      </CSSTransition>
+    ));
+  }
+
   return (
     <section className={`section`}>
       <div className="container">
         <div className="hero">
-          <TransitionGroup component={null}>
-            {isloaded &&
-              items.map((item, i) => (
-                <CSSTransition
-                  key={i}
-                  classNames="fadeup"
-                  timeout={navDelay}
-                  appear={true}
-                >
-                  <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-                </CSSTransition>
-              ))}
-          </TransitionGroup>
+          <TransitionGroup component={null}>{heroItems}</TransitionGroup>
         </div>
 
         <CSSTransition

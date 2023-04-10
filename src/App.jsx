@@ -17,31 +17,32 @@ function App() {
     };
   }, []);
 
-  return (
-    <>
-      {isLoading ? (
-        // Render the loading view while isLoading is true
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100vh",
-            backgroundColor: "#282c34",
-          }}
-        >
-          <p>Loading...</p>
-        </div>
-      ) : (
-        // Render the actual content when isLoading is false
-        <>
-          <NavBar />
-          <Contact />
-          <Header />
-        </>
-      )}
-    </>
+  let page = (
+    // Render the loading view while isLoading is true
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
+        backgroundColor: "#282c34",
+      }}
+    >
+      <p>Loading...</p>
+    </div>
   );
+
+  if (!isLoading) {
+    page = (
+      <>
+        <NavBar />
+        <Contact />
+        <Header />
+      </>
+    );
+  }
+
+  return <> {page} </>;
 }
 
 export default App;
