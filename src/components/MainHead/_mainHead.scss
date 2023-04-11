@@ -1,0 +1,30 @@
+@import "../../styles/scss/patrials/variables";
+.mainHead {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 10px 0px 40px;
+  white-space: nowrap;
+
+  .header {
+    position: relative;
+    display: inline-block;
+  }
+  .line {
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: $primary-darken-color;
+  }
+  span {
+    // margin-right: 3px;
+    font-size: 1.3rem;
+    font-weight: 200;
+
+    margin: 10px 12px 0px 0px;
+    color: $second-color;
+    font-family: "SF Mono", monospace;
+    font-weight: 400;
+  }
+}

@@ -35,22 +35,11 @@ function Hero() {
   }
 
   return (
-    <section className={`section`}>
+    <section id="header" className="section">
       <div className="container">
         <div className="hero">
           <TransitionGroup component={null}>{heroItems}</TransitionGroup>
         </div>
-
-        <CSSTransition
-          in={isloaded}
-          timeout={loaderDelay + 1000}
-          classNames="fade"
-          unmountOnExit
-        >
-          <div className="img">
-            <img src="https://i.ibb.co/6tMZGBJ/youssef.jpg" alt="" />
-          </div>
-        </CSSTransition>
       </div>
     </section>
   );

@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
-import Header from "./components/Sections/Header";
+import Header from "./components/Sections/Header/Header";
 
 import Contact from "./components/Contact/Contact";
+import AboutMe from "./components/Sections/AboutMe/AboutMe";
+import Experience from "./components/Sections/Experience/Experience";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +40,8 @@ function App() {
         <NavBar />
         <Contact />
         <Header />
+        <AboutMe />
+        <Experience />
       </>
     );
   }

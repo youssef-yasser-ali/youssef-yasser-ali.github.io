@@ -4,26 +4,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 70%;
 
   h1 {
     margin: 0 0 30px 4px;
     color: $second-color;
     font-family: "SF Mono", monospace;
     font-size: 16px;
-    // font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
+    // font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
   }
   h2 {
     line-height: 0.9;
-    // font-size: clamp(40px, 8vw, 80px);
-    font-size: clamp(2rem, 8vw, 3.75rem);
+    // font-size: clamp(2rem, 8vw, 3.75rem);
+    font-size: clamp(40px, 8vw, 80px);
   }
   h3 {
     margin-top: 5px;
     color: $primary-darken-color;
     line-height: 0.9;
-    font-size: clamp(2rem, 8vw, 3.75rem);
+    font-size: clamp(30px, 8vw, 80px);
   }
   p {
     margin: 20px 0 0;
@@ -54,28 +53,11 @@
   transition: all 500ms ease-out;
 }
 
-.container {
+#header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
-  .img {
-    width: 14rem;
-    img {
-      border-radius: 0.5rem;
-    }
-  }
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: start;
-    .hero {
-      max-width: 100%;
-    }
-    .img {
-      display: none;
-    }
-  }
 }
 
 .fade-enter {

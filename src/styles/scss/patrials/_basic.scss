@@ -23,8 +23,36 @@ body {
   line-height: 1.3;
 }
 
+.scroll-disabled {
+  overflow: hidden !important;
+}
+
 p {
   color: $primary-darken-color;
+}
+
+p > a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  font-family: inherit;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.2px;
+    bottom: 0;
+    left: 0;
+    background-color: $second-color;
+    transform-origin: bottom left;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  &:hover:after {
+    transform: scaleX(1);
+  }
 }
 
 button {
@@ -93,6 +121,17 @@ a {
 .section--hidden {
   opacity: 0;
   transform: translateY(8rem);
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.343);
+  backdrop-filter: blur(2px);
 }
 
 /* width */
