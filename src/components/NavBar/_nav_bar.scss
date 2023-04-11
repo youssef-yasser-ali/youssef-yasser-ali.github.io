@@ -17,13 +17,12 @@ $nav-scroll-height: 100px;
   z-index: 99;
 
   &.down {
-    height: 80px;
+    height: 74px;
     transform: translateY(calc($nav-scroll-height * -1));
   }
   &.up {
-    background-color: #00282b85;
     box-shadow: 0 10px 30px -10px rgba(2, 24, 32, 0.85);
-    height: 80px;
+    height: 74px;
     backdrop-filter: blur(10px);
     transform: translateY(0px);
   }
@@ -168,8 +167,6 @@ $nav-scroll-height: 100px;
 }
 
 // css component to make the effect toglle the same with navbar
-
-
 
 //
 #close {

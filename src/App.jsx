@@ -5,6 +5,7 @@ import Header from "./components/Sections/Header/Header";
 import Contact from "./components/Contact/Contact";
 import AboutMe from "./components/Sections/AboutMe/AboutMe";
 import Experience from "./components/Sections/Experience/Experience";
+import Loading from "./components/Loading/Loading";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +14,6 @@ function App() {
     const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 3000);
-
     return () => {
       clearTimeout(timeout);
     };
@@ -21,17 +21,7 @@ function App() {
 
   let page = (
     // Render the loading view while isLoading is true
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        backgroundColor: "#282c34",
-      }}
-    >
-      <p>Loading...</p>
-    </div>
+    <Loading />
   );
 
   if (!isLoading) {

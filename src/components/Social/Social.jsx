@@ -81,7 +81,7 @@ function Social() {
           </a>
         </li>
         <li className="social-item">
-          <a href="https://github.com/youssef-yasser-ali" target="_blank"></a>
+          <a href="https://twitter.com/Us_Ef_" target="_blank"></a>
         </li>
       </ul>
       <div className="line"></div>

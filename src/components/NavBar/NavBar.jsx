@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { TransitionGroup } from "react-transition-group";
 import { youssefLogo } from "../../assets";
 import "./_nav_bar.scss";
 import Toggle from "./Toggle/Toggle";
@@ -11,26 +10,26 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollState, setScrollState] = useState("home");
 
+  // handel scrolling
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop < 20) {
+      setScrollState("home");
+    } else if (scrollTop < window.previousScrollTop || 0) {
+      setScrollState("up");
+    } else {
+      setScrollState("down");
+    }
+    window.previousScrollTop = scrollTop;
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setIsMounted(true);
     }, 100);
 
-    // handel scrolling
-
-    const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop < 20) {
-        setScrollState("home");
-      } else if (scrollTop < window.previousScrollTop || 0) {
-        setScrollState("up");
-      } else {
-        setScrollState("down");
-      }
-      window.previousScrollTop = scrollTop;
-    };
-
+    // adding scroll event listener ..
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -38,11 +37,13 @@ function NavBar() {
     };
   }, []);
 
+  // handel toggle menu
   const handelToggle = () => {
     setIsOpen(!isOpen);
   };
 
   const classes = [];
+
   if (isOpen) {
     classes.push("active");
     document.body.classList.add("scroll-disabled");
