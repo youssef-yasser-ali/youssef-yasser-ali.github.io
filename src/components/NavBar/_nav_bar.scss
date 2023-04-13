@@ -14,16 +14,19 @@ $nav-scroll-height: 100px;
   height: $nav-scroll-height;
   align-items: center;
   padding: 0px 50px;
-  z-index: 99;
+  z-index: 999;
 
   &.down {
     height: 74px;
     transform: translateY(calc($nav-scroll-height * -1));
   }
+
   &.up {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px -10px rgba(2, 24, 32, 0.85);
     height: 74px;
-    backdrop-filter: blur(10px);
+
     transform: translateY(0px);
   }
 
@@ -146,6 +149,8 @@ $nav-scroll-height: 100px;
     background-color: #00282b85;
     box-shadow: 0 10px 30px -10px rgba(2, 24, 32, 0.85);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     a {
       padding: 15px !important;
     }

@@ -5,7 +5,7 @@ function MainHead(props) {
   return (
     <div className="mainHead">
       <span>0{props.num}.</span>
-      <h1 className="header"> {props.name}</h1>
+      <h2 className="header"> {props.name}</h2>
       <div className="line"> </div>
     </div>
   );

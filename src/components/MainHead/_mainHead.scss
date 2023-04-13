@@ -5,6 +5,7 @@
   align-items: center;
   margin: 10px 0px 40px;
   white-space: nowrap;
+  font-size: 3vh;
 
   .header {
     position: relative;
@@ -19,12 +20,19 @@
   }
   span {
     // margin-right: 3px;
-    font-size: 1.3rem;
     font-weight: 200;
+    font-size: 2.5vh;
 
-    margin: 10px 12px 0px 0px;
+    margin: 5px 8px 0px 0px;
     color: $second-color;
     font-family: "SF Mono", monospace;
     font-weight: 400;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+    span {
+      font-size: 1rem;
+    }
   }
 }
