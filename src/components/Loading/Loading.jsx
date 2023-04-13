@@ -1,12 +1,12 @@
 import React from "react";
-import { youssefLogo } from "../../assets";
+import { youssefLogo2 } from "../../assets";
 import "./_loading.css";
 function Loading() {
   return (
     <div className="face">
       <div className="cont">
-        <img src={youssefLogo} />
-        <span class="loading"></span>
+        <img src={youssefLogo2} />
+        <span className="loading"></span>
       </div>
     </div>
   );

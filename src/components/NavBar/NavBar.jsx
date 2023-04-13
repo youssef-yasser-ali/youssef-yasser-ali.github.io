@@ -31,7 +31,6 @@ function NavBar() {
 
     // adding scroll event listener ..
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -64,7 +63,7 @@ function NavBar() {
 
         <ol className={`nav-links ${classes.join(" ")}`}>
           <Toggle isOpen={isOpen} toggled={handelToggle} />
-          <Links isMounted={isMounted} />
+          <Links isOpen={isOpen} toggled={handelToggle} isMounted={isMounted} />
 
           <div className={`fade ${isMounted && "fadeDown-active"} `}>
             <button className="btn btn-second">Resume</button>

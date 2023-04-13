@@ -1,7 +1,7 @@
 .cont {
   margin: auto;
   position: relative;
-  opacity: 0;
+  /* opacity: 0; */
   animation: fadeInOut 3s ease-in;
 }
 @keyframes fadeInOut {
@@ -35,7 +35,7 @@
 }
 
 .cont img {
-  border-radius: 14px;
+  border-radius: 20px;
   width: 70px;
 }
 
@@ -64,8 +64,8 @@
 
 .face .cont > img {
   background: #64ffda;
-  box-shadow: 0px 7px 20px 2px #64ffda;
-  animation: bounce 2s ease infinite;
+  box-shadow: 0px 2px 20px 3px #64ffda;
+  animation: bounce 2s ease-out infinite;
 }
 
 @keyframes bounce {

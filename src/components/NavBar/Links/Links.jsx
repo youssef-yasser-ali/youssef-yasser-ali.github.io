@@ -9,6 +9,9 @@ function Links(props) {
     { name: "Work", link: "#" },
     { name: "Contact", link: "#" },
   ];
+  const handelClick = () => {
+    if (props.isOpen) props.toggled();
+  };
 
   let links = null;
 
@@ -17,6 +20,7 @@ function Links(props) {
       <CSSTransition key={name} classNames="fadeDown" timeout={navDelay}>
         <li
           className="nav-link"
+          onClick={handelClick}
           style={{ transitionDelay: `${(index + 1) * 100}ms` }}
         >
           <a href={link}>{name}</a>
