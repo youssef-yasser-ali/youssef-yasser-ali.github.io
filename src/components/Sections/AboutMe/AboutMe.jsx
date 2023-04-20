@@ -41,7 +41,7 @@ function AboutMe() {
         </div>
         <div className="img">
           <img
-            src="https://scontent.fcai21-1.fna.fbcdn.net/v/t39.30808-6/332123280_3088068964819098_7236975305357302567_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7HMyBvL-X8YAX8qZhK2&_nc_ht=scontent.fcai21-1.fna&oh=00_AfCiP8I0cM8y0WJVs8jUKFyS-D5sSrswfE3ViMoc4HoLlw&oe=643A0321"
+            src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/332123280_3088068964819098_7236975305357302567_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-iKb6HGxiFoAX82I_eS&_nc_ht=scontent-hbe1-1.xx&oh=00_AfBkNOZk5yNQaRi7VLLwM9SOR2Ax3Mr4YgFK6CTngKT2hQ&oe=6445E0A1"
             alt=""
           />
         </div>
