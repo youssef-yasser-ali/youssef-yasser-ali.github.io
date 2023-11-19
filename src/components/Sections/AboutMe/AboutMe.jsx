@@ -1,6 +1,8 @@
 import React from "react";
 import MainHead from "../../MainHead/MainHead";
 import "./aboutme.scss";
+import { technologes } from "../../../data/Data";
+import { youssefImg } from "../../../assets";
 
 function AboutMe() {
   return (
@@ -31,19 +33,13 @@ function AboutMe() {
           <p>Here are a few technologies I’ve been working with recently:</p>
 
           <ul>
-            <li>Python</li>
-            <li>C</li>
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>Git</li>
-            <li>MySQl</li>
+            {technologes.map((tech) => (
+              <li key={tech}>{tech}</li>
+            ))}
           </ul>
         </div>
         <div className="img">
-          <img
-            src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/332123280_3088068964819098_7236975305357302567_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-iKb6HGxiFoAX82I_eS&_nc_ht=scontent-hbe1-1.xx&oh=00_AfBkNOZk5yNQaRi7VLLwM9SOR2Ax3Mr4YgFK6CTngKT2hQ&oe=6445E0A1"
-            alt=""
-          />
+          <img src={youssefImg} alt="youssef" />
         </div>
       </div>
     </section>

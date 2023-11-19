@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { data } from "../../data/PersoalData";
+import { data } from "../../data/Data";
 import { navDelay, loaderDelay } from "../../data/timeDelay";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./_hero.scss";
