@@ -10,7 +10,7 @@ function ContactUs() {
           Whether you have a question or just want to say hi, I'll try my best
           to get back to you!
         </p>
-        <a className="btn-second btn" href="mailto::yyasser849@gmail.com">
+        <a className="btn-second btn" href="mailto:yyasser849@gmail.com">
           Say Hello
         </a>
       </div>

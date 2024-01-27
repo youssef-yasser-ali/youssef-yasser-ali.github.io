@@ -55,8 +55,8 @@ function NavBar() {
       <nav className={`nav-bar ${scrollState}`}>
         <div className={`logo ${isMounted && "fade-enter-active"} `}>
           <a href="#">
-            {/* <img src={youssefLogo} alt="youssef logo" /> */}
-            <svg
+            <img src={youssefLogo} alt="youssef logo" />
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 100 100"
               width="80"
@@ -87,7 +87,7 @@ function NavBar() {
               >
                 Y
               </text>
-            </svg>
+            </svg> */}
             {/* <svg
               fill="none"
               id="logo"

@@ -5,8 +5,8 @@ function Loading() {
   return (
     <div className="face">
       <div className="cont">
-        {/* <img src={youssefLogo2} /> */}
-        <svg
+        <img src={youssefLogo2} />
+        {/* <svg
           className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
@@ -28,7 +28,7 @@ function Loading() {
           >
             Y
           </text>
-        </svg>
+        </svg> */}
         <span className="loading"></span>
       </div>
     </div>
