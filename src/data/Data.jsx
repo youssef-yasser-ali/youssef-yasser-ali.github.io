@@ -1,3 +1,5 @@
+import { aromaPro, clickAndGitPro, forkifyPro, talk2InsPro } from "../assets";
+
 export const data = {
   name: "Youssef Yasser A.",
   title: "Software Engineering.",
@@ -19,7 +21,7 @@ export const projects = [
   {
     name: "Click & Get",
     description: `Click and Get is a simple web application and React ecommerce platform with essential commerce features. Built with React.`,
-    image: "/src/assets/Projects-img/click&get.jpeg",
+    image: clickAndGitPro,
     technologies: [
       "React",
       "React Router",
@@ -41,7 +43,7 @@ export const projects = [
         service analysis, content transcription, and more.
       </p>
     ),
-    image: "/src/assets/Projects-img/talk2ins-demo-1.jpeg",
+    image: talk2InsPro,
 
     technologies: ["React", "React Router", "Flask", "Hugging Face"],
     links: { github: "https://github.com/youssef-yasser-ali/click-and-get" },
@@ -57,7 +59,7 @@ export const projects = [
         or decrease servings as per his need and can view detailed directions.
       </p>
     ),
-    image: "/src/assets/Projects-img/forkify-demo.jpg",
+    image: forkifyPro,
     technologies: ["Javascript", "SCSS", "Parcel", "MVC"],
     links: {
       external: "https://forkify-youssef.netlify.app/",
@@ -94,7 +96,7 @@ export const otherProjects = [
         use. Besides.
       </p>
     ),
-    image: "/src/assets/Projects-img/aroma-demo.jpeg",
+    image: aromaPro,
     technologies: ["HML", "CSS", "Javascript"],
     links: {
       external: "https://aroma-youssef.netlify.app/",
