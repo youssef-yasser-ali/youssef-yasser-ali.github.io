@@ -19,7 +19,10 @@ function Toggle(props) {
 
   const toggleComponent = (
     // make a toggle menue
-    <div className="toggle-item">
+
+    // className={`fade ${isMounted && "fadeDown-active"}
+
+    <div className={`toggle-item `}>
       <span onClick={props.toggled} className="icons">
         {props.isOpen ? closeToggle : openToggle}
       </span>

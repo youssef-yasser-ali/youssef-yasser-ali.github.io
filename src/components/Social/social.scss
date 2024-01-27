@@ -7,8 +7,9 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  color: $primary-color;
   .line {
-    background-color: $icon-color;
+    background-color: $primary-color;
     width: 1.2px;
     height: 6rem;
   }
@@ -22,8 +23,8 @@
     gap: 22px;
     .social-item {
       list-style: none;
-      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
       &:hover {
         transform: translateY(-3px);
         color: $second-color;

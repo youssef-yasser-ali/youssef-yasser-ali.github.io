@@ -1,17 +1,5 @@
 /* Buttons */
 
-@mixin solid-button($background-color) {
-  border: 1px solid $background-color;
-
-  color: $background-color !important;
-  fill: $background-color;
-  background-color: transparent;
-  &:hover,
-  &:focus {
-    background-color: rgba(100, 255, 218, 0.1);
-  }
-}
-
 .btn {
   display: inline-block;
   outline: none;
@@ -20,25 +8,21 @@
   text-align: center;
   border-radius: 4px;
   padding: 12px 16px;
-  transition: background-color 0.4s;
-}
+  position: relative;
+  background-color: $background-color;
+  z-index: 99;
 
-.btn-primary {
-  @include solid-button($primary-color);
-}
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-.btn-dark-primary {
-  @include solid-button($primary-darken-color);
+  &:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0px 0px $second-color;
+  }
 }
 
 .btn-second {
-  @include solid-button($second-color);
-}
-
-.btn-group {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
+  color: $second-color !important;
+  fill: $second-color !important;
+  background-color: transparent;
+  border: 1px solid $second-color;
 }

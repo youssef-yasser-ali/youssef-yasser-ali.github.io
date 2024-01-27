@@ -27,10 +27,18 @@
   p {
     margin: 20px 0 0;
     max-width: 88%;
+    color: $primary-darken-color;
     font-size: clamp(1rem, 2vw, 1.25rem);
   }
   button {
     margin-top: 50px;
+  }
+
+  @media (min-width: $screen-m) {
+    max-width: 80%;
+    p {
+      max-width: 60%;
+    }
   }
 }
 
@@ -55,7 +63,7 @@
 
 #header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 5px;
 }

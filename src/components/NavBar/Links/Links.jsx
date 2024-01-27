@@ -6,8 +6,8 @@ function Links(props) {
   const navLinks = [
     { name: "About", link: "#AboutMe" },
     { name: "Experience", link: "#experience" },
-    { name: "Work", link: "#" },
-    { name: "Contact", link: "#" },
+    { name: "Work", link: "#projects-section" },
+    { name: "Contact", link: "#contact" },
   ];
   const handelClick = () => {
     if (props.isOpen) props.toggled();

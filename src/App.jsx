@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
-import Header from "./components/Sections/Header/Header";
 
 import Contact from "./components/Contact/Contact";
 import AboutMe from "./components/Sections/AboutMe/AboutMe";
 import Experience from "./components/Sections/Experience/Experience";
 import Loading from "./components/Loading/Loading";
+import Hero from "./components/Hero/Hero";
+import Projects from "./components/Sections/Projects/Projects";
+import ContactUs from "./components/Sections/Contact/ContactUs";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +23,7 @@ function App() {
   }, []);
 
   let page = (
-    // Render the loading view while isLoading is true
+    // Render the loading view while isLoading is True
     <Loading />
   );
 
@@ -29,9 +32,12 @@ function App() {
       <>
         <NavBar />
         <Contact />
-        <Header />
+        <Hero />
         <AboutMe />
         <Experience />
+        <Projects />
+        <ContactUs />
+        <Footer />
       </>
     );
   }

@@ -1,11 +1,15 @@
 @import "../../../styles/scss/patrials/variables";
 
 #AboutMe {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 3rem;
+  margin-bottom: 12rem;
   p {
     margin: 0px 0px 15px;
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    color: $icon-color;
+    line-height: 1.5;
   }
 
   ul {
@@ -21,6 +25,7 @@
       margin-bottom: 10px;
       padding-left: 20px;
       font-family: monospace;
+      color: $primary-darken-color;
 
       &::before {
         content: "▹";
@@ -37,11 +42,9 @@
   }
 
   .content {
-    .info {
-      max-width: 60%;
-    }
     display: flex;
     gap: 15px;
+
     .img {
       max-width: 320px;
 
@@ -52,6 +55,7 @@
         border-radius: 0.3rem;
         width: 100%;
         height: 100%;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
       }
 
       &::after {
@@ -60,21 +64,40 @@
         width: 100%;
         height: 100%;
         border: 2px solid $second-color;
-        top: 20px;
-        left: 20px;
+
+        top: 10px;
+        left: 10px;
         border-radius: 0.3rem;
         z-index: -1;
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
       }
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 93, 104, 0.158);
+        z-index: 1;
+        border-radius: 3px;
+      }
+      &:hover::before {
+        background-color: transparent;
+      }
+
       &:hover {
+        img {
+          transform: translate(-5px, -5px);
+        }
+
         &::after {
-          top: 14px;
-          left: 14px;
+          transform: translate(5px, 5px);
         }
       }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: $screen-l) {
       flex-direction: column;
       align-items: start;
       .info {
@@ -89,11 +112,14 @@
       //   display: none;
       // }
     }
+    @media (max-width: $screen-l) {
+      .info {
+        width: 100%;
+      }
+    }
   }
-}
 
-@media (max-width: 1200px) {
-  #AboutMe {
+  @media (max-width: $screen-s) {
     padding: 30px;
   }
 }

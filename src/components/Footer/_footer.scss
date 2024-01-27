@@ -1,0 +1,56 @@
+@import "../../styles/scss/patrials/variables";
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  align-items: center;
+  font-size: 0.9rem;
+  flex-direction: column;
+  gap: 2rem;
+
+  .social-items {
+    display: flex;
+    gap: 20px;
+    .social-item {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   background-color: $background-lighten-color;
+      //   border-radius: 50%;
+      list-style: none;
+      width: 40px;
+      height: 40px;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+      color: $icon-color;
+      &:hover {
+        color: $second-color;
+      }
+    }
+    .social-item a {
+      color: inherit;
+    }
+    .social-item svg {
+      width: 20px;
+      height: 20px;
+      color: inherit;
+    }
+    @media (min-width: $screen-m) {
+      display: none;
+    }
+  }
+
+  .copy {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    span {
+      font: 1em sans-serif;
+    }
+  }
+  :hover {
+    color: $second-color;
+  }
+}

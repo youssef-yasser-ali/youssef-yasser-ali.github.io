@@ -55,7 +55,73 @@ function NavBar() {
       <nav className={`nav-bar ${scrollState}`}>
         <div className={`logo ${isMounted && "fade-enter-active"} `}>
           <a href="#">
-            <img src={youssefLogo} alt="" />
+            {/* <img src={youssefLogo} alt="youssef logo" /> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 100 100"
+              width="80"
+              height="80"
+            >
+              <title>Logo</title>
+              <rect
+                width="50"
+                height="50"
+                rx="10"
+                ry="10"
+                x="4"
+                y="30"
+                fill="none"
+                stroke="#64ffda"
+                strokeWidth="2.8"
+              ></rect>
+              <text
+                x="29"
+                y="54"
+                textAnchor="middle"
+                alignmentBaseline="middle"
+                fontWeight="500"
+                fontFamily="courier"
+                fontSize="30"
+                transform="translate(0, 5)"
+                fill="#64ffda"
+              >
+                Y
+              </text>
+            </svg>
+            {/* <svg
+              fill="none"
+              id="logo"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 87 96"
+            >
+              <title>Logo</title>
+              <g transform="translate(-8.000000, -2.000000)">
+                <g transform="translate(11.000000, 5.000000)">
+                  <polygon
+                    id="Shape"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="39 0 0 22 0 67 39 90 78 68 78 23"
+                  ></polygon>
+                  <text
+                    x="40"
+                    y="50"
+                    text-anchor="middle"
+                    alignment-baseline="middle"
+                    // make it center
+                    font-weight="500"
+                    font-family="courier"
+                    font-size="45"
+                    fill="#64ffda"
+                  >
+                    Y
+                  </text>
+                </g>
+              </g>
+            </svg> */}
           </a>
         </div>
 

@@ -1,11 +1,11 @@
 import React from "react";
 import "./_mainHead.scss";
 
-function MainHead(props) {
+function MainHead({ num, name }) {
   return (
     <div className="mainHead">
-      <span>0{props.num}.</span>
-      <h2 className="header"> {props.name}</h2>
+      <span>0{num}.</span>
+      <h2 className="header"> {name}</h2>
       <div className="line"> </div>
     </div>
   );

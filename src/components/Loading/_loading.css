@@ -62,12 +62,20 @@
   }
 }
 
-.face .cont > img {
-  background: #64ffda;
-  box-shadow: 0px 2px 20px 3px #64ffda;
+.face .cont > img,
+.face .cont > svg {
+  box-shadow: 0px 2px 30px 3px #64ffda;
+
   animation: bounce 2s ease-out infinite;
 }
 
+.svg {
+  width: 70px;
+  height: 70px;
+  fill: #64ffda;
+  animation: bounce 2s ease-out infinite;
+  border-radius: 10px;
+}
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -82,3 +90,18 @@
     transform: scale(1);
   }
 }
+
+/* @keyframes bounce {
+  0% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+  50% {
+    transform: scale(0.9);
+    filter: blur(1.4);
+    box-shadow: 0px 0.3px 5px 0.5px #64ffda;
+  }
+  100% {
+    transform: scale(1);
+  }
+} */

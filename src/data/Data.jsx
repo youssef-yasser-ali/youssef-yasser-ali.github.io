@@ -17,20 +17,118 @@ export const technologes = [
 
 export const projects = [
   {
-    name: "E-Commerce Website",
-    description: `A fully functional e-commerce website built using React, Redux, Firebase, Stripe, and React Router.`,
-    image: "/images/1.png",
-    tags: ["React", "Redux", "Firebase", "Stripe", "React Router"],
-    source: " ",
+    name: "Click & Get",
+    description: `Click and Get is a simple web application and React ecommerce platform with essential commerce features. Built with React.`,
+    image: "/src/assets/Projects-img/click&get.jpeg",
+    technologies: [
+      "React",
+      "React Router",
+      "Redux",
+      "React Thunk",
+      "boatstrap",
+    ],
+    links: { github: "https://github.com/youssef-yasser-ali/click-and-get" },
   },
 
   {
-    name: "Covid-19 Tracker",
+    name: "Talk2Insights",
+    description: (
+      <p>
+        a web application that enables users to convert spoken audio into text,
+        summarize the content, and analyze the sentiment of the conversation.
+        <br /> This project aims to provide valuable insights from audio
+        content, which can be useful for various applications such as customer
+        service analysis, content transcription, and more.
+      </p>
+    ),
+    image: "/src/assets/Projects-img/talk2ins-demo-1.jpeg",
 
-    description: `A Covid-19 Tracker built using React, Material UI, and Chart.js.`,
-    image: "/images/2.png",
-    tags: ["React", "Material UI", "Chart.js"],
-    source: " ",
+    technologies: ["React", "React Router", "Flask", "Hugging Face"],
+    links: { github: "https://github.com/youssef-yasser-ali/click-and-get" },
+  },
+  {
+    name: "Forkify",
+    description: (
+      <p>
+        a JavaScript application that interacts with the Forkify API to fetch
+        and display recipe food data. This app uses modern JavaScript tools,
+        such as parcel to bundle the modules , user can search for a specific
+        recipe, and save to a favorites list via local storage , easily increase
+        or decrease servings as per his need and can view detailed directions.
+      </p>
+    ),
+    image: "/src/assets/Projects-img/forkify-demo.jpg",
+    technologies: ["Javascript", "SCSS", "Parcel", "MVC"],
+    links: {
+      external: "https://forkify-youssef.netlify.app/",
+      github: "https://github.com/youssef-yasser-ali/Forkify",
+    },
+  },
+  // {
+  //   name: "Aroma",
+  //   description: (
+  //     <p>
+  //       a shopping website template are very many. From cool hover effects and
+  //       sticky navbar to multiple shop pages and blog, it is all available for
+  //       use. Besides, Aroma also comes with login, register and tracking pages
+  //     </p>
+  //   ),
+  //   image: "/src/assets/Projects-img/aroma-demo.jpeg",
+  //   technologies: ["HML", "CSS", "Javascript"],
+  //   links: {
+  //     external: "https://aroma-youssef.netlify.app/",
+  //     github: "https://github.com/youssef-yasser-ali/click-and-get",
+  //   },
+  // },
+];
+
+// other prjects
+
+export const otherProjects = [
+  {
+    name: "Aroma",
+    description: (
+      <p>
+        a shopping website template are very many. From cool hover effects and
+        sticky navbar to multiple shop pages and blog, it is all available for
+        use. Besides.
+      </p>
+    ),
+    image: "/src/assets/Projects-img/aroma-demo.jpeg",
+    technologies: ["HML", "CSS", "Javascript"],
+    links: {
+      external: "https://aroma-youssef.netlify.app/",
+      github: "https://github.com/youssef-yasser-ali/click-and-get",
+    },
+  },
+  {
+    name: "Mapty",
+    description: (
+      <p>
+        Mapty is a simple web application that allows users to log their
+        workouts on a map. Built with JavaScript.
+      </p>
+    ),
+    technologies: ["Javascript", "SCSS", "Parcel", "MVC"],
+    links: {
+      external: "https://mapty-youssef.netlify.app/",
+      github: "https://github.com/youssef-yasser-ali/Mapty",
+    },
+  },
+  {
+    name: "Chatbot",
+    description: (
+      <p>
+        a chatbot project that uses the OpenAI API to generate responses to user
+        input. The chatbot is built using HTML, CSS, and JavaScript, and is
+        designed to be run in a web browser.
+      </p>
+    ),
+    image: "/src/assets/Projects-img/bankist-demo.jpg",
+    technologies: ["HTML", "CSS", "Javascript", "OpenAI API"],
+    links: {
+      github: "https://github.com/youssef-yasser-ali/chat-bot",
+    },
   },
 ];
 
@@ -116,3 +214,60 @@ export const socialMediaData = [
     ),
   },
 ];
+
+export const jobDetails = {
+  jobs: [
+    {
+      jobTitle: "Data Scientist Supervisor",
+      company: "Cat-Reloaded",
+      companyUrl: "https://catreloaded.org/",
+
+      startDate: "Nov 2022 ",
+      endDate: "Present",
+      responsibilities: [
+        "Guide and mentor colleagues in their data science learning journey within the team.",
+        "Assign technical tasks, conduct thorough reviews, and provide constructive feedback to team members.",
+        "Collaborate with the team to develop and implement data science projects.",
+      ],
+    },
+    {
+      jobTitle: "Software Engineer",
+      company: "Alx Africa",
+      companyUrl: "https://www.alxafrica.com/",
+      startDate: "Jan 2023",
+      endDate: "Mar 2023 ",
+      responsibilities: [
+        "Applied software engineering best practices and followed coding standards to ensure maintainability and readability of the codebase",
+        "Proficiently worked with Linux and actively engaged in learning and implementing the C programming language, Git, and GitHub.",
+        "Collaborated closely with team members to conduct code reviews, providing constructive feedback, and fostering a collaborative development environment",
+      ],
+    },
+    {
+      jobTitle: "Data Scientist Intern",
+      company: "Sparks Foundation",
+      companyUrl: "https://www.thesparksfoundationsingapore.org/",
+
+      startDate: "Nov 2022",
+      endDate: " Dec 2022",
+      responsibilities: [
+        "Utilized skills in Python, Machine Learning, and Data Science to successfully execute assigned tasks",
+        "Executed end-to-end project lifecycles, implementing Supervised and Unsupervised Machine Learning algorithms such as Linear Regression, Decision Tree, K-Means Clustering, etc.",
+      ],
+    },
+    {
+      jobTitle: "Artificial Intelligence Intern",
+      company: "ITIDA",
+      companyUrl: "https://www.itida.gov.eg/",
+      startDate: "Aug 2022 ",
+      endDate: "Sep 2022",
+
+      responsibilities: [
+        "(120 hours) on Artificial Intelligence (AI) presented by the National Telecommunication Institute (NTI) and Information Technology Industry Development Agency, ITIDA",
+        "Overview of AI and machine learning algorithms",
+        "Build a project using AI and machine learning algorithms",
+        "Overview of Deep Learing and TensorFlow programming for image recognition, speech recognition, and human-machine dialogue",
+        "Learn a General Soft skills : Communication skills, Team Wrok and Leadership skills",
+      ],
+    },
+  ],
+};

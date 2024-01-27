@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin min($bp, $max: "null", $device: "screen") {
   @if $max == "null" {
     @media only #{$device} and (min-width: #{$bp}) {
@@ -73,5 +75,15 @@ $container-sizes: (
         max-width: container(#{nth(nth($container-sizes, $j), 1)});
       }
     }
+  }
+}
+
+.container {
+  @media (max-width: $screen-xl) {
+    width: 80% !important;
+  }
+  @media (max-width: $screen-s) {
+    width: 100% !important;
+    padding: 30px !important;
   }
 }
