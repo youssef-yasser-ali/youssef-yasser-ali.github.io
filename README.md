@@ -5,7 +5,7 @@
 <h1 align="center">Youssef Ali</h1>
 </p>
 <p align='center'>
-My Firt Personal Website using React.js Build with Vite.js
+My first personal Website using React.js Build with Vite.js
 </p>
 
 <p align='center' href = ''>
