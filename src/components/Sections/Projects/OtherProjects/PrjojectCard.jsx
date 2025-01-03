@@ -28,7 +28,10 @@ function PrjojectCard({ title, description, links, technologies }) {
           <ProjectLinks links={links} />
         </div>
         <h3 className="project-title">
-          <a href={links.external || links.github} target="_blank">
+          <a
+            href={links.external || links.github || links.kaggle}
+            target="_blank"
+          >
             {title}
           </a>
         </h3>

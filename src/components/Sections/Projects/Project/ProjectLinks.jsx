@@ -48,6 +48,17 @@ const ProjectLinks = ({ links }) => {
           </svg>
         </a>
       )}
+      {links.kaggle && (
+        <a
+          href={links.kaggle}
+          aria-label="Kaggle Link"
+          className="external"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <b>K</b>
+        </a>
+      )}
     </div>
   );
 };

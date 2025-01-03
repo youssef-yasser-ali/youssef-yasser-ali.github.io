@@ -1,37 +1,58 @@
-import { aromaPro, clickAndGitPro, forkifyPro, talk2InsPro } from "../assets";
+import {
+  aromaPro,
+  clickAndGitPro,
+  forkifyPro,
+  talk2InsPro,
+  ragToolkit,
+  newsSummerization,
+  brainTumor,
+  cardAi,
+} from "../assets";
 
 export const data = {
   name: "Youssef Yasser A.",
   title: "Software Engineering.",
-  description: ` I’m a software engineer especially a web developer with a strong
+  description: ` I’m a software engineer with a strong
   passion for the fields of artificial intelligence and machine
   learning.`,
 };
 
+export const aboutMe = `
+  Youssef Yasser is a Computer and Control Systems Engineering student at Mansoura University. He is a software engineer with a strong passion for the fields of artificial intelligence and machine learning.
+
+  Youssef is interested in problem-solving and desires to stay up-to-date with the latest technologies. He is always eager to learn new things and challenge himself with complex tasks. He enjoys working in teams and collaborating with other developers to deliver high-quality products.
+
+  He is passionate about applying his knowledge and skills to real-world problems and creating innovative solutions that can benefit society. He aspires to become a successful and influential software engineer in the future.
+
+  Here are a few technologies I’ve been working with recently:
+`;
+
 export const technologes = [
   "Python",
-  "C",
-  "JavaScript (ES6+)",
-  "React",
+  "JavaScript",
+  "TensorFlow",
+  "PyTorch",
+  "Scikit-learn",
+  "Hugging Face",
+  "NLP Libraries",
+  "React.js",
+  "MySQL",
+  "Docker",
+  "Azure",
+  "Flask",
+  "FastAPI",
   "Git",
-  "MySQl",
 ];
 
 export const projects = [
   {
-    name: "Click & Get",
-    description: `Click and Get is a simple web application and React ecommerce platform with essential commerce features. Built with React.`,
-    image: clickAndGitPro,
-    technologies: [
-      "React",
-      "React Router",
-      "Redux",
-      "React Thunk",
-      "boatstrap",
-    ],
-    links: { github: "https://github.com/youssef-yasser-ali/click-and-get" },
+    name: "RAG Toolkit",
+    description:
+      "A library that simplifies the creation of Retrieval-Augmented Generation (RAG) pipelines, offering utilities for document processing, vector retrieval, query routing, and integration with large language models (LLMs).",
+    image: ragToolkit,
+    links: { github: "https://github.com/youssef-yasser-ali/rag-toolkit" },
+    technologies: ["Python", "NLP", "Langchain", "RAG"],
   },
-
   {
     name: "Talk2Insights",
     description: (
@@ -48,24 +69,77 @@ export const projects = [
     technologies: ["React", "React Router", "Flask", "Hugging Face"],
     links: { github: "https://github.com/youssef-yasser-ali/click-and-get" },
   },
+
   {
-    name: "Forkify",
-    description: (
-      <p>
-        a JavaScript application that interacts with the Forkify API to fetch
-        and display recipe food data. This app uses modern JavaScript tools,
-        such as parcel to bundle the modules , user can search for a specific
-        recipe, and save to a favorites list via local storage , easily increase
-        or decrease servings as per his need and can view detailed directions.
-      </p>
-    ),
-    image: forkifyPro,
-    technologies: ["Javascript", "SCSS", "Parcel", "MVC"],
+    name: "Brain Tumor Detection System",
+    description: `A system for detecting and classifying brain tumors using Deep Learning. It includes segmentation and classification models, deployed on Azure for scalability.`,
+    technologies: ["Pytorch", "Docker", "Azure", "FastAPI"],
+    image: brainTumor,
     links: {
-      external: "https://forkify-youssef.netlify.app/",
-      github: "https://github.com/youssef-yasser-ali/Forkify",
+      github:
+        "https://github.com/youssef-yasser-ali/brain-tumor-detection-system",
     },
   },
+  {
+    name: "CardiAi",
+    description: `Developed an end-to-end machine learning pipeline for multi-class heart disease prediction (0 to 4). Utilized advanced algorithms including XGBoost, CatBoost, and LightGBM.`,
+    technologies: ["Python", "Pandas", "Seaborn", "Scikit-learn", "Flask"],
+    image: cardAi,
+    links: {
+      github:
+        "https://github.com/youssef-yasser-ali/cardiai-heart-disease-prediction",
+    },
+  },
+  {
+    name: "Multilingual News Summarizer",
+    description:
+      "A FastAPI-based API that utilizes a fine-tuned mT5 model for generating concise summaries of news articles in English and Arabic.",
+    image: newsSummerization,
+    links: {
+      github:
+        "https://github.com/youssef-yasser-ali/Multilingual-News-Summarizer",
+    },
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Hugging Face",
+      "mT5",
+      "Multilingual NLP",
+    ],
+  },
+
+  {
+    name: "Click & Get",
+    description: `Click and Get is a simple web application and React ecommerce platform with essential commerce features. Built with React.`,
+    image: clickAndGitPro,
+    technologies: [
+      "React",
+      "React Router",
+      "Redux",
+      "React Thunk",
+      "boatstrap",
+    ],
+    links: { github: "https://github.com/youssef-yasser-ali/click-and-get" },
+  },
+
+  // {
+  //   name: "Forkify",
+  //   description: (
+  //     <p>
+  //       a JavaScript application that interacts with the Forkify API to fetch
+  //       and display recipe food data. This app uses modern JavaScript tools,
+  //       such as parcel to bundle the modules , user can search for a specific
+  //       recipe, and save to a favorites list via local storage , easily increase
+  //       or decrease servings as per his need and can view detailed directions.
+  //     </p>
+  //   ),
+  //   image: forkifyPro,
+  //   technologies: ["Javascript", "SCSS", "Parcel", "MVC"],
+  //   links: {
+  //     external: "https://forkify-youssef.netlify.app/",
+  //     github: "https://github.com/youssef-yasser-ali/Forkify",
+  //   },
+  // },
   // {
   //   name: "Aroma",
   //   description: (
@@ -87,6 +161,35 @@ export const projects = [
 // other prjects
 
 export const otherProjects = [
+  {
+    name: "Custom GPT-2 Model for Python Code Generation",
+    description: `Developed a custom GPT-2 model from scratch using the Hugging Face transformers library for Python code generation. `,
+    technologies: ["Python", "Hugging Face", "PyTorch", "GPT-2"],
+
+    links: {
+      kaggle:
+        "https://www.kaggle.com/code/youssefyasserali/custom-gpt-2-model-for-python-code-generation",
+    },
+  },
+
+  {
+    name: "Twitter Sentiment Analysis",
+    description: `A sentiment analysis system using BERT to classify tweets as positive, negative, or neutral. Trained on the Sentiment140 dataset for real-world applications.`,
+    technologies: ["Python", "BERT", "PyTorch", "Hugging Face", "MySQL"],
+    links: {
+      kaggle:
+        "https://www.kaggle.com/code/youssefyasserali/twitter-sentiment-analysis-bert-pytorch",
+    },
+  },
+  {
+    name: "Microscopic Image Classification for Diagnostics",
+    description: `A developing TensorFlow Deep Learning model for medical parasitology diagnostics.`,
+    technologies: ["Python", "TensorFlow", "Computer Vision"],
+    links: {
+      kaggle:
+        "https://www.kaggle.com/code/youssefyasserali/ieee-microscopic-image-classification",
+    },
+  },
   {
     name: "Aroma",
     description: (
@@ -220,12 +323,25 @@ export const socialMediaData = [
 export const jobDetails = {
   jobs: [
     {
+      jobTitle: "Machine Learning Intern",
+      company: "DEPI",
+      companyUrl: "https://www.depi.gov.eg/", // Add the correct URL if available
+      startDate: "Apr 2024",
+      endDate: "Oct 2024",
+      responsibilities: [
+        "Completed an intensive training program in Machine Learning and AI, focusing on NLP and real-world deployment.",
+        "Developed and deployed machine learning models for text classification, summarization, and NLP tasks.",
+        "Gained hands-on experience in fine-tuning transformer models (e.g., BERT, GPT) for NLP applications, enhancing model accuracy and adapting them for scalable, production-ready solutions.",
+        "Utilized Azure Cognitive Services and Azure Machine Learning for cloud deployment, with lifecycle management via MLflow.",
+      ],
+    },
+    {
       jobTitle: "Data Scientist Supervisor",
       company: "Cat-Reloaded",
       companyUrl: "https://catreloaded.org/",
 
       startDate: "Nov 2022 ",
-      endDate: "Present",
+      endDate: "Sep 2024",
       responsibilities: [
         "Guide and mentor colleagues in their data science learning journey within the team.",
         "Assign technical tasks, conduct thorough reviews, and provide constructive feedback to team members.",
